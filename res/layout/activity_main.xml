@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/stepCounterFSM"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/TextView05"
+        android:text="@string/_0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/step"
+        android:layout_alignTop="@+id/stop"
+        android:layout_marginLeft="14dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/step"
+        android:layout_width="274dp"
+        android:layout_height="138dp"
+        android:layout_centerHorizontal="true"
+        android:text="Step" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/step"
+        android:layout_marginTop="16dp"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/status"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="37dp"
+        android:text="FSM Steps = "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/stepCounterFSM"
+        android:layout_marginTop="24dp"
+        android:text="Dominant Frequency = "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/maximumFrequency"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView05"
+        android:layout_below="@+id/TextView05"
+        android:layout_marginTop="28dp"
+        android:text="@string/_0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

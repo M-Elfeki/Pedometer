@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sensor_Fusion</string>
+    <string name="action_settings">Settings</string>
+    <string name="_sdcard_measurments_txt">/sdcard/measurments.txt</string>
+    <string name="_0_0_0_">(0, 0, 0)</string>
+    <string name="save">Save</string>
+    <string name="_0">0</string>
+
+</resources>
